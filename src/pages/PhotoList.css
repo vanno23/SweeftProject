@@ -1,0 +1,77 @@
+.photo-title {
+  text-align: center;
+}
+.photo-list {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-gap: 15px;
+}
+
+.photo-item {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgb(212, 212, 212);
+  border-radius: 8px;
+  height: 250px;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 700px;
+  height: 550px;
+  margin: 50px;
+  border-radius: 5px;
+  border: 5px solid white;
+}
+
+.modal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal_information {
+  text-align: center;
+  background-color: rgb(207, 232, 249);
+}
+
+.modal_information p {
+  margin: 10px 0;
+  font-size: 20px;
+  color: black;
+}
+
+.modal_information strong {
+  color: #555;
+}
+
+@media (min-width: 768px) {
+  .photo-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .photo-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

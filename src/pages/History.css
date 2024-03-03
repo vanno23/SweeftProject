@@ -1,0 +1,41 @@
+/* Use a sophisticated font (Montserrat in this example) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.history-container {
+  margin: 20px;
+  text-align: center;
+}
+
+.history-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #333; /* Dark grey color */
+  margin-bottom: 15px;
+}
+
+.history-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.history-button {
+  background-color: #3498db; /* A shade of blue */
+  text-transform: capitalize;
+
+  color: #fff; /* White text */
+  padding: 15px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions on hover */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.history-button:hover {
+  background-color: #2980b9; /* Slightly darker blue on hover */
+  color: #f0f0f0; /* Lighter text on hover */
+}
